@@ -1,0 +1,143 @@
+#yodaPopUp {
+    width:150px;
+    position:fixed;
+    bottom: 20px;
+    right:20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#chatBox {
+    display:none;
+    width: 30rem;
+    max-width: 90vw;
+    height:80vh;
+    background-color: white;
+    position:fixed;
+    bottom: 20px;
+    right:20px;
+    box-shadow: 0 0 22px 0 rgba(0,0,0,0.6);
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 1;
+}
+
+#chatHeader {
+    height:80px;
+    background-color:#063e72;
+    position:relative;
+    top: -5px;
+    right:0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#chatHeader .headerContainer{
+    display: flex;
+    align-items: center;
+}
+
+#chatHeader #yodaChatbox{
+    width: 100px;
+    height: auto;
+}
+
+#chatHeader #minimize{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    text-align: center;
+    border: none;
+    margin-right: 15px;
+}
+
+#chatHeader #minimize:hover{
+    background-color: #032545;
+}
+
+#chatHeader #minimize #minus{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+#chatHeader .headerText{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+.chatArea{
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1 1 auto;
+    padding: 15px;
+}
+
+.chatArea #flopsyText{
+    min-height: 40px;
+    max-width: 80%;
+    border-radius: 10px;
+    overflow: auto;
+    background: #ddd;
+    margin-bottom: 20px;
+    border: 1px solid;
+    padding: 5px 10px 5px 10px;
+    width: fit-content;
+}
+.chatArea #flopsyText:nth-child(2n+2){
+    background-color: #063e72;
+    color: white;
+    margin-left: auto;
+    border: 1px solid black;
+    min-height: 40px;
+}
+
+.chatArea #flopsyText #url{
+    color: #0000FF;
+}
+
+.chatArea #flopsyText #url:hover{
+    text-decoration: underline;
+}
+
+.chatFooter{
+    display:flex;
+    width: 100%;
+    height: 60px;
+}
+
+#msg{
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    padding: 0 15px;
+    height: 100%;
+    font-size: 20px;
+    flex: 1 1 auto;
+}
+
+#msg:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+#chatBox .btn{
+    background-color: #063e72;
+    color:white;
+    width:80px;
+    height: 60px;
+    opacity: .9;
+    border-radius: 0;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+#chatBox .btn:hover{
+    opacity: 1;
+}
